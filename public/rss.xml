@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[OkkhorBlog - a MarkDown Blog]]></title><description><![CDATA[This is my personal blog like yet another online Diary]]></description><link>https://okkhor.org</link><generator>RSS for Node</generator><lastBuildDate>Tue, 31 Jul 2018 18:40:32 GMT</lastBuildDate><item><title><![CDATA[Access nested JSON property in jspdf autotable plugin]]></title><description><![CDATA[We have a JSON structure that looks like this: Update for additional question in comments (v2.3.2 required): Source  StackOverFlow]]></description><link>https://okkhor.org/JsPdf-Hook/</link><guid isPermaLink="false">https://okkhor.org/JsPdf-Hook/</guid><content:encoded>&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/photo-1490474418585-ba9bad8fd0ea-cover-4e60a68a42b5726ba930a16b8b0c2fdb-6270a.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 450px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD7ElEQVQ4y5VUS2wbVRQd1w75QNQqThOCkzZ103jGHxo+YdUNm6obROkCqaqESmDRZtGKkIhuEF0gNiCB1AqhljieOClOW9RiJzixCahpEKWoJVBKKxACkhn/YjsZfzOZmXe5Y48ju/aGJ13d9z3v3HfPfRRVoxkeq6fq6hsKfX1dfXN9Q2O30WjsbWlp6Uffrs6jp/5XQ0C9Bt6H5mltNXoQ8FcE6lHnsa+reZAfpykOTW0cS2/DscE1tKtOHbe3Nu1vbGqYR5sxdewcadtpVMxdrf3q2uhb3XXqXrRtJZxHgWvd2IVBD1KU7gWK2v4iRe0YoKim3dWkLLoKhjxbvIVjLQdxfBY3DC+76DO5a45TcOu54zCz/yT4nj4B830DmcuOU/+OWs+sOOkRzkW/h3sPFc5qTNUw1RsMxUnLx+B3QNLDgHAZzbO3YKkpM2S9eyA3bdZsH6SnGYCAHRD0vEbMUM5Sr/nTySkrbjKL/NQBKfbgayn6cFZa/TMobSYWJXltQZKF21L+j3cl4btOMeWzATId0sLWlyelCMjSxxIeG3DO3UrIe4TE00BWEwJJxGNEljYIABRsMzJD1oNtsnDdrgK+pkWqL2dYytTB2CUVcBcJ+48jIIHwwlkIeZ4F4eYBSP/0EhAigyQsIWCHkrxaYHioHONRwL7QBIY82gnhb4dIPAMQ8r4K/IXHITnbDusBI4jh6yCGrpD1b8wkPsUgoPWZakC2KBn0nbzbusk7TRD5/n0SF0SI/PAhROZPQua3Ecj9PgzZ+2i/vI6AFuAnLNKKk9mjJVRXpUH0LbzbFo2MPQXRu04lngWIp2RI5oqPV2py+p6SCnQD72ainMvWXqXj0gB12MiPMw9WJ3sg9NXLSjg4CCH/AESCb0L67hvI8G0gCr5hPKhkZp8Eftz2kHdbnqgCRLpbwMhwMTnRhSF/IMf+ukk4lgH+4nZI+hpBuOHApGCWwx45N9cBHGu/Jd7r0VWVnlrLW2G77V5h0gTROxekRB5I5PY5CPsOQ+rHI7Cx/HkhZHH5M2ljzoR6tfs1yeh41kKVJwWtKExkOJbByggHTmyuhv/GNyQkmZZLb0gUcR1y9wclca4bAW2TmqgNtT4Hg+Y/Sl9F6bC9ef6Lfjk0fZTE7nxK8v9cJNmfj5HU4vNyamFvPj+rSob+pKJKtkJGuqXyw/7wxjUbCFeskLi0TxU58GMd8tpsm7wWMEE20AN5PwOiFwuApd8plS5XzrAQsjaBvhlBD6M/hxlf4sativClAzJeB6DoFc7FLCGz8/gpvMK76eaaf2H5V1bJnNZjOAz60ytjaE6aift6DRVnJiwVZ/4Dhr2q4eGEKBAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;okkhor.org&quot;
+        title=&quot;&quot;
+        src=&quot;/static/photo-1490474418585-ba9bad8fd0ea-cover-4e60a68a42b5726ba930a16b8b0c2fdb-6270a.png&quot;
+        srcset=&quot;/static/photo-1490474418585-ba9bad8fd0ea-cover-4e60a68a42b5726ba930a16b8b0c2fdb-d62e7.png 200w,
+/static/photo-1490474418585-ba9bad8fd0ea-cover-4e60a68a42b5726ba930a16b8b0c2fdb-3fd7e.png 400w,
+/static/photo-1490474418585-ba9bad8fd0ea-cover-4e60a68a42b5726ba930a16b8b0c2fdb-6270a.png 450w&quot;
+        sizes=&quot;(max-width: 450px) 100vw, 450px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;We have a JSON structure that looks like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;Primary_Key&amp;quot;: &amp;quot;12345&amp;quot;,
+&amp;quot;Site_Name&amp;quot;: {
+  &amp;quot;Address_Name&amp;quot;: &amp;quot;Address 1&amp;quot;
+  },
+&amp;quot;Default_Screen_Name&amp;quot;: &amp;quot;Bob&amp;quot;,
+&amp;quot;Full_Name&amp;quot;: &amp;quot;Bob Smith&amp;quot;&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var columns = [
+    {title: &amp;quot;ID&amp;quot;, dataKey: &amp;quot;id&amp;quot;},
+    {title: &amp;quot;Name&amp;quot;, dataKey: &amp;quot;name&amp;quot;}, 
+    {title: &amp;quot;Country&amp;quot;, dataKey: &amp;quot;address&amp;quot;}
+];
+var rows = [
+    {id: 1, name: &amp;quot;Shaw&amp;quot;, address: {country: &amp;quot;Tanzania&amp;quot;}},
+    {id: 2, name: &amp;quot;Nelson&amp;quot;, address: {country: &amp;quot;Kazakhstan&amp;quot;}},
+    {id: 3, name: &amp;quot;Garcia&amp;quot;, address: {country: &amp;quot;Madagascar&amp;quot;}}
+];
+
+var doc = jsPDF();
+doc.autoTable(columns, rows, {
+   createdCell: function(cell, data) {
+       if (data.column.dataKey === &amp;#39;address&amp;#39;) {
+           cell.text = cell.raw.country;
+       }
+   }
+});
+doc.save(&amp;#39;table.pdf&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Update for additional question in comments (v2.3.2 required):&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;var columns = [
+    {title: &amp;quot;Country&amp;quot;, dataKey: &amp;quot;address&amp;quot;, displayProperty: &amp;quot;country&amp;quot;},
+    ...
+];
+var rows = [...];
+
+...
+
+createdCell: function(cell, data) {
+   if (data.column.dataKey === &amp;#39;address&amp;#39;) {
+       var prop = data.column.raw.displayProperty;
+       cell.text = cell.raw[prop];
+   }
+}&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Source &lt;a href=&quot;https://stackoverflow.com/q/44133030/9308513&quot;&gt;StackOverFlow&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
