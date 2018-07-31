@@ -7,7 +7,16 @@ cover: photo-1490474418585-ba9bad8fd0ea-cover.png
 
 ![okkhor.org](./photo-1490474418585-ba9bad8fd0ea-cover.png)
 
-Not at the moment. You can follow that feature request here. Your options are currently to either flatten the data before passing it to autotable or use the hooks to extract the specific text you want. That can be done like this:
+We have a JSON structure that looks like this:
+
+```
+"Primary_Key": "12345",
+"Site_Name": {
+  "Address_Name": "Address 1"
+  },
+"Default_Screen_Name": "Bob",
+"Full_Name": "Bob Smith"
+```
 
 ```
 var columns = [
